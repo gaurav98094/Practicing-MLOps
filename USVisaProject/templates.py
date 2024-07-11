@@ -20,8 +20,10 @@ list_files =[
     f"{project_name}/pipeline/__init__.py",
     f"{project_name}/pipeline/training_pipeline.py",
     f"{project_name}/pipeline/prediction_pipeline.py",
+    f"{project_name}/exception/__init__.py",
     f"{project_name}/utils/__init__.py",
     f"{project_name}/utils/main_utils.py",
+
     f"UsVisaProject/app.py",
     "UsVisaProject/requirements.txt",
     "UsVisaProject/Dockerfile",
@@ -37,7 +39,8 @@ for filepath in list_files:
     filedir,filename = os.path.split(filepath)
     if filedir!='':
         os.makedirs(filedir,exist_ok=True)
-    if(not os.path.exists(filepath)) or (os.path.getsize(filepath)==0):
+        
+    if (not os.path.exists(filepath)):
         with open(filepath,"w") as f:
             pass
     else:
