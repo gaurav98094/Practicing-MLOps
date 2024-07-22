@@ -9,4 +9,11 @@
 - Building Model Pipeline
 - Pipeline Automation
 
+2. Packaging Model For Production
+- Packaging Model For Deployment
+- Production Code Considerations
+- Code Mapping
+- Best Practices
+
+
 5. Project 1 : US Visa 
